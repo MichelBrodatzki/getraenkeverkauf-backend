@@ -16,5 +16,8 @@ def get_database():
 
         g.database = connect(database_url or 'sqlite:///:memory:')
 
+        # Create all neeeded tables
+        g.database.create_tables([])
+
     # Return existing database connection
     return g.database
