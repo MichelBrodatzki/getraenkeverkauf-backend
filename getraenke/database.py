@@ -12,12 +12,10 @@ def get_database():
         database_url = getenv("DATABASE_URL", None)
 
         if database_url is None:
-            print ("No database url set! Defaulting to temporary in-memory database.")
+            print ("No database url set! Defaulting to SQLite database")
 
-        g.database = connect(database_url or 'sqlite:///:memory:')
-
-        # Create all neeeded tables
-        g.database.create_tables([])
+        print ("Opening database")
+        g.database = connect(database_url or 'sqlite:///database.sqlite')
 
     # Return existing database connection
     return g.database
