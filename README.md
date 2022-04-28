@@ -21,7 +21,7 @@ Das Backend stellt eine REST-API bereit. Diese gibt unter dem Endpoint ```GET /s
 ... Authentifizierung ...
 
 ## Roadmap
-- [ ] Eine Roadmap schreiben
+- [ ] Ordentliche README schreiben
 - [ ] Englische README
 
 ## Mithelfen
