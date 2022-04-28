@@ -22,6 +22,7 @@ Das Backend stellt eine REST-API bereit. Diese gibt unter dem Endpoint ```GET /s
 
 ## Roadmap
 - [ ] Eine Roadmap schreiben
+- [ ] Englische README
 
 ## Mithelfen
 
